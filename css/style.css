@@ -3,7 +3,7 @@
 
 :root {
   --primary-color: #1a3d2b; /* Deep Forest Green */
-  --accent-color: #ffffff;  /* CHANGED TO WHITE - This removes the orange/pink everywhere */
+  --accent-color: #60a5fa;  /* NEW COLOR: Professional Light Blue (Replaces the pink/orange) */
   --text-dark: #2b2b2b;
   --text-light: #f8f9fa;
   --card-bg: #ffffff;
@@ -58,7 +58,7 @@ h1, h2, h3, h4 {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: var(--accent-color); /* Now white */
+  background-color: var(--accent-color); /* Now Light Blue */
   transition: width 0.3s ease-in-out;
 }
 
@@ -69,7 +69,7 @@ h1, h2, h3, h4 {
 
 .navbar .nav-link:hover,
 .navbar .nav-link.active {
-  color: var(--accent-color) !important; /* Now white */
+  color: var(--accent-color) !important; /* Now Light Blue */
 }
 
 /* ===== HERO / CAROUSEL ===== */
@@ -116,7 +116,7 @@ h1, h2, h3, h4 {
 }
 
 .page-header p {
-  color: var(--accent-color); /* Now white */
+  color: var(--accent-color); /* Now Light Blue */
   font-size: 1.2rem;
   font-weight: 600;
 }
