@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesotho Tourism - Gallery</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">🇱🇸 Lesotho Tourism</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="page-header text-center text-white">
+  <div class="container">
+    <h1>Photo Gallery</h1>
+    <p>Click an image to see it bigger</p>
+  </div>
+</header>
+
+<main class="container my-5">
+  <!-- GALLERY GRID -->
+  <div class="row g-4" id="galleryGrid">
+    <div class="col-6 col-md-4">
+      <img src="images/maletsunyane.jpg" class="gallery-img" alt="Maletsunyane Falls" onclick="showImage(0)">
+    </div>
+    <div class="col-6 col-md-4">
+      <img src="images/sani.jpg" class="gallery-img" alt="Sani Pass" onclick="showImage(1)">
+    </div>
+    <div class="col-6 col-md-4">
+      <img src="images/village.jpg" class="gallery-img" alt="Basotho village" onclick="showImage(2)">
+    </div>
+    <div class="col-6 col-md-4">
+      <img src="images/maseru.jpg" class="gallery-img" alt="Maseru city" onclick="showImage(3)">
+    </div>
+    <div class="col-6 col-md-4">
+      <img src="images/katse.jpg" class="gallery-img" alt="Katse Dam" onclick="showImage(4)">
+    </div>
+    <div class="col-6 col-md-4">
+      <img src="images/pony.jfif" class="gallery-img" alt="Basotho pony" onclick="showImage(5)">
+    </div>
+  </div>
+
+  <!-- PAGINATION (Bootstrap Component 7) -->
+  <nav class="mt-5">
+    <ul class="pagination justify-content-center">
+      <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+  </nav>
+</main>
+
+<!-- MODAL LIGHTBOX (Bootstrap Component 8 + JS) -->
+<div class="modal fade" id="imageModal" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalTitle">Image</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img src="" id="modalImage" class="img-fluid" alt="Gallery image preview">
+      </div>
+      <div class="modal-footer justify-content-between">
+        <button class="btn btn-secondary" onclick="prevImage()">← Previous</button>
+        <button class="btn btn-primary" onclick="nextImage()">Next →</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="bg-dark text-white text-center py-3 mt-5">
+  <p class="mb-0">&copy; 2025 Lesotho Tourism. All rights reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

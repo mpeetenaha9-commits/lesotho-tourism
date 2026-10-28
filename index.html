@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesotho Tourism - Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAVBAR (Bootstrap Component 1) -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">🇱🇸 Lesotho Tourism</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- CAROUSEL (Bootstrap Component 2) -->
+<div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/maletsunyane.jpg" class="d-block w-100 hero-img" alt="Maletsunyane Falls in Lesotho">
+      <div class="carousel-caption">
+        <h1>Welcome to the Kingdom in the Sky</h1>
+        <p>Discover the beauty of Lesotho</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/sani.jpg" class="d-block w-100 hero-img" alt="Sani Pass mountains in Lesotho">
+      <div class="carousel-caption">
+        <h1>Adventure Awaits</h1>
+        <p>Hike, ski and explore</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/village.jpg" class="d-block w-100 hero-img" alt="Traditional Basotho village">
+      <div class="carousel-caption">
+        <h1>Experience Basotho Culture</h1>
+        <p>Meet the friendly people of Lesotho</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<!-- ALERT (Bootstrap Component 3) -->
+<div class="container mt-4">
+  <div class="alert alert-success text-center" role="alert">
+     Special offer: Free guided tour for groups of 10 or more!
+  </div>
+</div>
+
+<!-- CARDS (Bootstrap Component 4) -->
+<section class="container my-5">
+  <h2 class="section-title text-center mb-4">Top Tourist Destinations</h2>
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card h-100 custom-card">
+        <img src="images/maletsunyane.jpg" class="card-img-top" alt="Maletsunyane Falls">
+        <div class="card-body">
+          <h5 class="card-title">Maletsunyane Falls</h5>
+          <p class="card-text">One of the highest single-drop waterfalls in Africa, found in Semonkong.</p>
+          <a href="services.html" class="btn btn-primary">Learn More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100 custom-card">
+        <img src="images/sani.jpg" class="card-img-top" alt="Sani Pass">
+        <div class="card-body">
+          <h5 class="card-title">Sani Pass</h5>
+          <p class="card-text">A famous mountain pass with breathtaking views and 4x4 adventures.</p>
+          <a href="services.html" class="btn btn-primary">Learn More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100 custom-card">
+        <img src="images/village.jpg" class="card-img-top" alt="Basotho village">
+        <div class="card-body">
+          <h5 class="card-title">Basotho Villages</h5>
+          <p class="card-text">Experience traditional Basotho culture, food and hospitality.</p>
+          <a href="services.html" class="btn btn-primary">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ACCORDION (Bootstrap Component 5) -->
+<section class="container my-5">
+  <h2 class="section-title text-center mb-4">Frequently Asked Questions</h2>
+  <div class="accordion" id="faqAccordion">
+    <div class="accordion-item">
+      <h3 class="accordion-header">
+        <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#faq1">
+          When is the best time to visit Lesotho?
+        </button>
+      </h3>
+      <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">The best time is from October to March for warm weather, or June to August for snow in the mountains.</div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h3 class="accordion-header">
+        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2">
+          Do I need a passport to enter Lesotho?
+        </button>
+      </h3>
+      <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">Yes, all visitors need a valid passport. Some countries may need a visa.</div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h3 class="accordion-header">
+        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq3">
+          What currency is used in Lesotho?
+        </button>
+      </h3>
+      <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">The Loti (LSL) is used, and South African Rand (ZAR) is also accepted everywhere.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center py-3 mt-5">
+  <p class="mb-0">&copy; 2025 Lesotho Tourism. All rights reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
