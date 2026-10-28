@@ -3,7 +3,7 @@
 
 :root {
   --primary-color: #1a3d2b; /* Deep Forest Green */
-  --accent-color: #60a5fa;  /* NEW COLOR: Professional Light Blue (Replaces the pink/orange) */
+  --accent-color: #d4af37;  /* NEW COLOR: Premium Warm Gold / Sand */
   --text-dark: #2b2b2b;
   --text-light: #f8f9fa;
   --card-bg: #ffffff;
@@ -58,7 +58,7 @@ h1, h2, h3, h4 {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: var(--accent-color); /* Now Light Blue */
+  background-color: var(--accent-color); /* Now Gold */
   transition: width 0.3s ease-in-out;
 }
 
@@ -69,7 +69,7 @@ h1, h2, h3, h4 {
 
 .navbar .nav-link:hover,
 .navbar .nav-link.active {
-  color: var(--accent-color) !important; /* Now Light Blue */
+  color: var(--accent-color) !important; /* Now Gold */
 }
 
 /* ===== HERO / CAROUSEL ===== */
@@ -104,7 +104,6 @@ h1, h2, h3, h4 {
   background-position: center;
   padding: 100px 0;
   text-align: center;
-  /* The border-bottom line has been completely removed here */
 }
 
 .page-header h1 {
@@ -116,7 +115,7 @@ h1, h2, h3, h4 {
 }
 
 .page-header p {
-  color: var(--accent-color); /* Now Light Blue */
+  color: var(--accent-color); /* Now Gold */
   font-size: 1.2rem;
   font-weight: 600;
 }
