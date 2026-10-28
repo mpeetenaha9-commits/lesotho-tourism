@@ -274,3 +274,31 @@ h1, h2, h3, h4 {
     height: 200px;
   }
 }
+
+/* ===== SPECIAL OFFER BANNER (WOW EFFECT) ===== */
+.custom-alert {
+  background: linear-gradient(135deg, #1a3d2b, #2d6a4f); /* Deep green gradient */
+  color: #ffffff;
+  border: 1px solid rgba(212, 175, 55, 0.4); /* Subtle Gold border */
+  border-left: 6px solid #d4af37; /* Strong Gold accent on the left */
+  border-radius: 12px;
+  padding: 1.2rem 2rem;
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  box-shadow: 0 8px 25px rgba(26, 61, 43, 0.15); /* Soft shadow */
+  transition: all 0.4s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* The "Wow" hover effect */
+.custom-alert:hover {
+  transform: translateY(-3px) scale(1.01);
+  box-shadow: 0 12px 30px rgba(26, 61, 43, 0.25);
+  border-color: #d4af37;
+  color: #d4af37; /* Text turns gold on hover */
+}
