@@ -43,33 +43,41 @@ h1, h2, h3, h4 {
   color: #fff !important;
 }
 
+/* --- Nav links: gold pill highlight instead of underline --- */
 .navbar .nav-link {
   font-weight: 600;
   color: rgba(255,255,255,0.8) !important;
   position: relative;
-  transition: color 0.3s ease;
+  z-index: 1;
+  padding: 0.5rem 1rem !important;
+  border-radius: 30px;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
-/* Custom animated underline for nav links */
-.navbar .nav-link::after {
+/* The gold pill that grows in behind the text */
+.navbar .nav-link::before {
   content: '';
   position: absolute;
-  width: 0%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: var(--accent-color); /* Now Gold */
-  transition: width 0.3s ease-in-out;
-}
-
-.navbar .nav-link:hover::after,
-.navbar .nav-link.active::after {
-  width: 100%;
+  inset: 0;
+  background: var(--accent-color);
+  border-radius: 30px;
+  transform: scale(0.6);
+  opacity: 0;
+  z-index: -1;
+  transition: transform 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+              opacity 0.35s ease;
 }
 
 .navbar .nav-link:hover,
 .navbar .nav-link.active {
-  color: var(--accent-color) !important; /* Now Gold */
+  color: var(--primary-color) !important;
+  transform: translateY(-1px);
+}
+
+.navbar .nav-link:hover::before,
+.navbar .nav-link.active::before {
+  transform: scale(1);
+  opacity: 1;
 }
 
 /* ===== HERO / CAROUSEL ===== */
