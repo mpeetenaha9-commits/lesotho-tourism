@@ -287,7 +287,8 @@ h1, h2, h3, h4 {
 .custom-alert {
   background: linear-gradient(135deg, #1a3d2b, #2d6a4f); /* Deep green gradient */
   color: #ffffff;
-  border: 1px solid rgba(212, 175, 55, 0.4); /* Subtle Gold border */
+  border: 1px solid rgba(212, 175, 55, 0.4); /* Subtle Gold border all around */
+  border-left: 1px solid rgba(212, 175, 55, 0.4); /* Forces the left side to match */
   border-radius: 12px;
   padding: 1.2rem 2rem;
   font-family: 'Outfit', sans-serif;
